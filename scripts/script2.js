@@ -1,21 +1,19 @@
-var playing = true
-var userHealth = 40;
-var grantHealth = 10;
-var wins = 0;
-
 function startGame(){
   var answer = prompt("Do you want to play?").toLowerCase();
   if(answer === "yes"){
     var name = prompt("Please enter the character's name.");
     startCombat(name);
   }else{
-    var playing =false;
-    console.log("Game Over.")
+    console.log("Oh Well. Game Over.");
   }
 }
 
 function startCombat(name){
-  while(playing){
+  var userHealth = 40;
+  var grantHealth = 10;
+  var wins = 0;
+
+  while(wins < 4){
     //Win Condition for ending game
     if(wins ===3){
       console.log("That's three wins. You have won the battle!!");
@@ -31,7 +29,8 @@ function startCombat(name){
       console.log("Uh oh! " + name + " takes a hit. Your health is now " + userHealth + "!");
       console.log("Bam! Your strike has landed. Grant has " + grantHealth + " health left.");
     }else if(aOrQ ==="quit"){
-      playing = false;
+      console.log("Later nerd!")
+      break;
     }
 
     //Health Condition for ending game.
