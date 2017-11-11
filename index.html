@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <div id = "display">
+      <h1>Revenge of the Living Dead</h1>
+      <div id = "start">
+        <button id ="startbutton" onclick="startGame()">START</button>
+      </div><!-- End of start div -->
+      <div id="play">
+        <div id="buttons">
+          <button id ="attack" class="bdesign" value = "attack" onclick = "startCombat(value)">ATTACK</button>
+          <button id ="heal" class="bdesign" value = "heal" onclick = "startCombat(value)">HEAL</button>
+          <button id ="quit" class="bdesign" value = "quit" onclick = "startCombat(value)">QUIT</button>
+        </div><!-- End of buttons -->
+        <!--Put the information about whats going on in here with innerHTML-->
+        <p> </p>
+        <div id="stats">
+          <h2></h2>
+          <div id="character">
+            <div id="name">
 
-<script type="text/javascript" src="scripts/script3.js"></script>
-</body>
+            </div>
+            <div id="health">
+
+            </div>
+            <div id="healsRemaining">
+
+            </div>
+            <div id="wins">
+
+            </div>
+          </div>
+          <h2></h2>
+          <div id="enemy">
+
+            <div id="ename">
+
+            </div>
+            <div id="ehealth">
+
+            </div>
+          </div>
+        </div><!-- End of stats -->
+      </div><!-- End of play -->
+    </div><!-- End of display -->
+  <script type="text/javascript" src="scripts/script4.js"></script>
+  </body>
 </html>

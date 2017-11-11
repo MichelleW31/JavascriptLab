@@ -28,6 +28,7 @@ function startGame(){
   }else{
     console.log("Oh Well. Maybe next time.");
   }
+}
 
   //Function for the fight//
   function startCombat(name){

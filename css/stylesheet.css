@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+@font-face{
+    font-family: "murder";
+    src:url("../fonts/murder.ttf");
+}
+
+@font-face{
+    font-family: "aliens";
+    src:url("../fonts/aliens.ttf");
+}
+@font-face{
+    font-family: "walkway";
+    src:url("../fonts/walkway.ttf");
+}
+
+
+body{
+    background-image:url("../images/blood.gif");
+    background-size:cover;
+}
+
+/* Start Menu */
+#display{
+    background-color:rgba(0,0,0,0.8);
+    width: 70%;
+    margin:90px auto 0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:4px;
+}
+
+
+#display h1{
+    margin:50px 0 50px 0;
+    color:white;
+    font-family: "murder";
+    font-size:80px;
+    font-weight:500;
+    letter-spacing:3px;
+}
+
+#display #start button{
+    padding: 30px 40px 30px 40px;
+    margin-bottom:90px;
+    background-color:#000;
+    border:none;
+    border-radius:3px;
+    font-family: "aliens";
+    letter-spacing:1px;
+    font-size:50px;
+    color:#fff;
+    font-weight:100;
+}
+
+#display #start button:hover{
+    color: #840003;
+}
+
+
+/* Play div */
+
+#play{
+    display:none;
+    flex-direction:column;
+    width:70%;
+    align-items:center;
+}
+
+#play #buttons{
+    margin: 20px 0 20px 0;
+}
+
+.bdesign{
+    width:190px;
+    padding: 25px 0px 25px 0px;
+    background-color:#000;
+    border:none;
+    border-radius:3px;
+    font-family: "aliens";
+    letter-spacing:1px;
+    font-size:35px;
+    color:#fff;
+    font-weight:100;
+    margin-top:-35px
+}
+
+.bdesign:hover{
+    color: #840003;
+}
+
+#play p{
+    text-align:center;
+    width:63%;
+    margin-bottom:20px;
+}
+
+#play p p{
+    text-align:center;
+    padding:0;
+    width:auto;
+}
+
+#stats{
+    border: 2px solid #fff;
+    width:90%;
+    margin: 0 0 20px 0;
+    display:flex;
+    flex-direction:column;
+}
+
+#stats h2{
+    text-align:center;
+    margin: 10px 0 10px 0;
+    color:#fff;
+    font-family: "aliens";
+    font-size:45px;
+    font-weight:200;
+}
+
+
+#character{
+    display:flex;
+    justify-content:space-around;
+
+}
+
+#character #name{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#character #health{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#character #healsRemaining{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#character #wins{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+
+#enemy{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:10px;
+}
+
+#enemy #ename{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#enemy #ehealth{
+    color:#fff;
+    font-family: "walkway";
+    font-weight:100;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
