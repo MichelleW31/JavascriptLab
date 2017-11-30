@@ -97,6 +97,10 @@ body{
     text-align:center;
     width:63%;
     margin-bottom:20px;
+    font-family: "walkway";
+    color:#fff;
+    letter-spacing: 1px;
+    font-size:17px;
 }
 
 #play p p{
@@ -184,3 +188,21 @@ body{
     letter-spacing:2px;
 }
 
+@media screen and (max-width:480px){
+    #display{
+        width:100%;
+        height:1000px;
+        margin:0;
+    }
+
+    #display h1{
+        font-size:35px;
+        margin-bottom:100px;
+    }
+
+    #display #start button{
+        font-size:30px;
+    }
+
+
+}
