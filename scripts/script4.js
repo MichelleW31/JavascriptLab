@@ -87,7 +87,7 @@ function displayInfo(){
         pabutton.style.display="none";
         var para = document.querySelector("#play p p");
         para.style.display="none";
-        buttondiv.style.display="block";
+        buttondiv.style.display="flex";
         statdiv.style.display="flex";
       }
     }else if(condition ==="winner"){
@@ -104,7 +104,7 @@ function displayInfo(){
         pabutton.style.display="none";
         var para = document.querySelector("#play p p");
         para.style.display="none";
-        buttondiv.style.display="block";
+        buttondiv.style.display="flex";
         statdiv.style.display="flex";
       }
 
