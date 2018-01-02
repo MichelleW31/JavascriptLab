@@ -21,11 +21,12 @@
 body{
     background-image:url("../images/zombie.jpg");
     background-size:cover;
+    background-repeat:no-repeat;
 }
 
 /* Start Menu */
 #display{
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,0.6);
     width: 70%;
     margin:90px auto 0 auto;
     display:flex;
@@ -60,6 +61,7 @@ body{
 #display #start button:hover{
     color: #840003;
 }
+
 
 
 /* Play div */
@@ -188,7 +190,39 @@ body{
     letter-spacing:2px;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:1200px){
+    #display{
+        width:90%;
+        height:auto;
+    }
+
+    #display h1{
+        font-size:50px;
+    }
+
+    #display #start button{
+        margin-top:50px;
+        font-size:39px;
+    }
+
+    #play{
+        width:90%;
+    }
+
+    #play p{
+        width:100%;
+    }
+
+    .bdesign{
+        font-size:28px;
+        padding:20px 0 20px 0;
+        width:150px;
+    }
+
+ 
+}
+
+@media screen and (max-width:590px){
     #display{
         width:100%;
         height:1000px;
@@ -205,7 +239,8 @@ body{
         margin-top:100px;
     }
 
-    #buttons{
+
+    #play #buttons{
         display:flex;
         flex-direction:column;
         margin:0;
