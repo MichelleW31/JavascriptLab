@@ -61,7 +61,7 @@ function displayInfo(){
   function gameText(condition){
     var gametext = document.querySelector("#play p");
     if(condition === "attack"){
-      gametext.innerText = "Bam! Your strike has landed and you've taken a hit!. Your health is now " + character.health + " and " + enemy.name + " \'s health is " + enemy.health;
+      gametext.innerText = "Bam! Your strike has landed and you've taken a hit!. Your health is now " + character.health + " and " + enemy.name + " \'s health is " + enemy.health + ".";
     }else if(condition ==="heal"){
       gametext.innerText ="You've healed yourself but also took a hit! Your health is now " + character.health + " and " + enemy.name + " \'s health is " + enemy.health;
     }else if(condition === "quit"){
